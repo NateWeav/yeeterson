@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<title>Ryanssite</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="shortcut icon" type="image/x-con" href="favicon.ico" />
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Poppins", sans-serif
+    }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+    
+    .w3-half img:hover {
+        opacity: 1
+    }
+</style>
+
+<body>
+    <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background:rgb(175, 0, 0);" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-64" style="color:white;"><b>Ryanssite</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#price" color="white" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-weight:normal;color:white;">SchBoard Software</a>
+            <!--<a href="#graph" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-weight:normal;color:white;">Graph</a>-->
+            <a href="#buy" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-weight:normal;color:white;">Social</a>
+            <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-weight:normal;color:white;">Contact</a>
+        </div>
+    </nav>
+    <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background:rgb(175, 0, 0);">
+        <a href="javascript:void(0)" class="w3-button w3-margin-right" style="background:rgb(175, 0, 0);" onclick="w3_open()">☰</a>
+        <span><b>Ryanssite</b></span>
+    </header>
+
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <div class="w3-container" style="margin-top:10px" id="showcase">
+            <h1 class="w3-jumbo"><b>Ryanssite</b></h1>
+        </div>
+        <br>
+        <div class="w3-container" id="price" id="showcase">
+            <h1 class="w3-xxxlarge" style="color:rgb(175, 0, 0);"><b>SchBoard</b></h1>
+            <hr style="width:50px;border:5px solid rgb(175, 0, 0);" class="w3-round">
+            <p>A mobile application to view Google Classroom coursework for every class you're in, view your schedule for the school year, and get notifications for upcoming assignments.<br><a href="http://schboard.github.io/baseplate/">Click here</a> to
+                visit the website. The website is currently in beta.</p>
+        </div>
+
+        <!--<div class="w3-container" id="graph" style="margin-top:75px">
+            <a>
+                <h1 class="w3-xxxlarge" style="color:rgb(175, 0, 0);"><b>Stuff</b></h1>
+            </a>
+            <hr style="width:50px;border:5px solid rgb(175, 0, 0);" class="w3-round">
+        </div>-->
+
+        <div class="w3-container" id="buy" style="margin-top:75px">
+            <h1 class="w3-xxxlarge" style="color:rgb(175, 0, 0);"><b>Social</b></h1>
+            <hr style="width:50px;border:5px solid rgb(175, 0, 0);" class="w3-round">
+            <p>If you, for some reason, want to follow me on social media, here ya go!<br>
+                <ul>
+                    <li><a href="http://steamcommunity.com/id/TastyUdders">Steam</a></li>
+                    <li><a href="http://instagram.com/tastyudders">Instagram</a></li>
+                    <li><a href="http://twitter.com/tastyudders">Twitter</a></li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="w3-container" id="designers" style="margin-top:75px">
+            <h1 class="w3-xxxlarge" style="color:rgb(175, 0, 0);"><b>Contact</b></h1>
+            <hr style="width:50px;border:5px solid rgb(175, 0, 0);" class="w3-round">
+            <p>You can email me at <a href="mailto:tastyudders@gmail.com">tastyudders@gmail.com</a> or private message me on one of my social media accounts.</p>
+        </div>
+
+    </div>
+    <div class="w3-light-grey w3-container w3-padding-16" style="margin-top:75px;padding-right:58px">
+        <p class="w3-right">Created by <b>Ryan</b></a>
+        </p>
+    </div>
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+
+</html>
